@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  background-position-y: -140px;
+  background-color: hsl(275, 100%, 97%);
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  margin: 0.5rem;
+}
+
+.faqFormat {
+  max-width: 100%;
+  width: 500px;
+  background-color: white;
+  padding: 2rem;
+  margin: 3rem 1rem 0;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgb(154, 153, 153);
+}
+
+.title {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 25px;
+}
+
+.question {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.question p {
+  font-weight: 500;
+}
+
+.button {
+  background: url("./assets/images/icon-plus.svg") no-repeat center;
+  width: 25px; /*25pxより小さくしたい場合はどうすればいい*/
+  height: 25px;
+}
+
+.button:hover {
+  opacity: 0.2;
+}
+
+.visible {
+  /* 背景色が透明になる */
+  background-image: url("./assets/images/icon-minus.svg");
+}
+
+.qa {
+  border-top: solid hsl(275, 100%, 97%) 1px;
+  padding: 0.5rem;
+}
+
+.qa:first-of-type() {
+  /*一つ目の要素だけ変更したい*/
+  border: none;
+}
+
+.answer {
+  display: none;
+}
+
+.show {
+  display: block;
+  color: hsl(292, 16%, 49%);
+  margin: 15px 0;
+}
+
+.show2 {
+  transition: all 1s ease-out;
+}
