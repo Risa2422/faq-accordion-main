@@ -5,7 +5,7 @@
 body {
   background-image: url(./assets/images/background-pattern-desktop.svg);
   background-repeat: no-repeat;
-  background-position-y: -140px;
+  background-position-y: -100px;
   background-color: hsl(275, 100%, 97%);
   font-family: "Work Sans", sans-serif;
 }
